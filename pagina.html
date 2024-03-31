@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Pulpa - Tienda de Pulpas de Frutas</title>
+    <style>
+          body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        header {
+            position: relative; /* Añadido para posicionar elementos hijos relativos a él */
+            background-color: #ffffff;
+            color: #000000;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #1f900b;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: bold; /* Hace que el texto esté en negrita */
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .container {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #9dba98;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #1f900b;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        #banner {
+            width: 90%;
+            max-height: 1500px;
+            object-fit: cover;
+            position: relative; /* Añadido para posicionar correctamente */
+            z-index: 1; /* Añadido para colocar detrás del contenido */
+        }
+        #logo {
+            max-width: 500px;
+            max-height: 400px;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="banner.png" alt="Banner de Mr. Pulpa" id="banner">
+    <img src="Logo.png" alt="Logo de Mr. Pulpa" id="logo">
+    <h1>Bienvenido a Mr. Pulpa</h1>
+    <p style="font-size: 24px;"> ¡Tu tienda de pulpas de frutas frescas!
+        En nuestra casa, la frescura y la calidad son nuestro sello distintivo. Estamos encantados de darte la bienvenida a nuestro mundo de sabores naturales y vibrantes.
+Desde los exuberantes campos hasta tu mesa, nos comprometemos a ofrecerte la mejor pulpa de fruta sin semilla y nuestra variedad de limonadas, directamente de la fuente.🥭🍒🥥🍓🍋
+
+    </p>
+</header>
+
+<nav>
+    <a href="#catalogo">Catálogo</a>
+    <a href="#videos">Videos</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#ubicacion">Ubicación</a>
+</nav>
+
+
+
+<style>
+    #catalogo {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta el ancho de las columnas */
+        grid-gap: 20px; /* Agrega espacios entre las imágenes */
+    }
+    .producto {
+        display: inline-block;
+        margin-bottom: 20px; /* Añade margen inferior a cada producto */
+
+        text-align: center; /* Centra el contenido dentro de cada celda */
+    }
+    .producto img {
+        max-width: 100%; /* Establece el ancho máximo de las imágenes */
+        height: auto; /* Permite que la altura de la imagen se ajuste automáticamente */
+    }
+    .producto p {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 16px; /* Establece el tamaño de fuente de la descripción */
+        line-height: 1.5; /* Ajusta el espaciado entre líneas de la descripción */
+    }
+
+    /* Centra la primera imagen */
+    .producto:first-child {
+        grid-column: span 2; /* Ocupa dos columnas */
+        justify-self: center; /* Centra horizontalmente */
+    }
+    /* Animación de desplazamiento */
+    @keyframes slideIn {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        h1 {
+            animation: slideIn 1s ease forwards;
+        }
+</style>
+
+
+<div class="container" id="catalogo">
+    <h2>Catálogo</h2>
+    <div class="producto">
+        <img src="1.png" alt="Descripción del Producto 2">
+        <p>Limonadas</p>
+    </div>
+    <div class="producto">
+        <img src="2.jpg" alt="Descripción del Producto 1">
+        <p>Limonada de coco</p>
+    </div>
+    <div class="producto">
+        <img src="3.jpg" alt="Descripción del Producto 2">
+        <p>Limonada de mango biche</p>
+    </div>
+    <div class="producto">
+        <img src="4.jpg" alt="Descripción del Producto 2">
+        <p>Limonada Cerezada</p>
+    </div>
+    <div class="producto">
+        <img src="5.jpg" alt="Descripción del Producto 2">
+        <p>Limonada natural</p>
+    </div>
+    <div class="producto">
+        <img src="6.jpg" alt="Descripción del Producto 2">
+        <p>Pulpa de mango</p>
+    </div>
+    <div class="producto">
+        <img src="7.jpg" alt="Descripción del Producto 2">
+        <p>Pulpa de mora</p>
+    </div>
+    <div class="producto">
+        <img src="8.jpg" alt="Descripción del Producto 2">
+        <p>Pulpa de fresa</p>
+    </div>
+    <div class="producto">
+        <img src="9.jpg" alt="Descripción del Producto 2">
+        <p>Pulpa de maracuya</p>
+    </div><div class="producto">
+        <img src="10.jpg" alt="Descripción del Producto 2">
+        <p>Pulpa de guanabana</p>
+    </div>
+    <div class="producto">
+        <img src="11.jpg" alt="Descripción del Producto 2">
+        <p>Pulpa de lulo</p>
+    </div>
+
+    
+    <!-- Puedes agregar más productos siguiendo la misma estructura -->
+</div>
+
+
+
+
+<style>
+    #videos {
+        text-align: center; /* Centra el contenido horizontalmente */
+    }
+    #videos video {
+        max-width: 400px; /* Establece un ancho máximo para el video */
+        width: 100%; /* Asegura que el video ocupe todo el ancho disponible */
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+</style>
+
+<div class="container" id="videos">
+    <h2>Videos</h2>
+    <video controls>
+        <source src="video.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+    <!-- Reemplaza "ruta_al_video.mp4" con la ruta a tu video local -->
+</div>
+<style>
+    #contacto p.tel {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold; /* Hace que el texto esté en negrita */
+        font-size: 18px; /* Cambia el tamaño del texto */
+    }
+</style>
+
+<div class="container" id="contacto">
+    <h2>Contacto</h2>
+    <p>Puedes contactarnos a través del siguiente número:</p>
+    <p class="tel">Teléfono: +57 (316) 776-3807</p>
+</div>
+<style>
+    #ubicacion p.Dir {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold; /* Hace que el texto esté en negrita */
+        font-size: 18px; /* Cambia el tamaño del texto */
+    }
+</style>
+<div class="container" id="ubicacion">
+    <h2>Ubicación</h2>
+    <p>Nuestra tienda está ubicada en:</p>
+    <p class="Dir">Direccion: Calle 78 #23-42, Cali, Colombia</p>
+    <br>
+
+
+</div>
+
+<footer>
+    <p>Derechos reservados © 2024 Mr. Pulpa</p>
+</footer>
+
+</body>
+</html>
+

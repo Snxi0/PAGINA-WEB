@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+header {
+    position: relative;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    background-color: #1f900b;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.container {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #9dba98;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+footer {
+    background-color: #1f900b;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#banner {
+    width: 90%;
+    max-height: 1500px;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+#logo {
+    max-width: 500px;
+    max-height: 400px;
+    z-index: -1;
+}
+#catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+.producto {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.producto img {
+    max-width: 100%;
+    height: auto;
+}
+.producto p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.producto:first-child {
+    grid-column: span 2;
+    justify-self: center;
+}
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+h1 {
+    animation: slideIn 1s ease forwards;
+}
+#videos {
+    text-align: center;
+}
+#videos video {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+}
+#contacto p.tel {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+#ubicacion p.Dir {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
